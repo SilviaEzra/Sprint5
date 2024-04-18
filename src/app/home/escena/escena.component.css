@@ -1,0 +1,100 @@
+.card {
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+.background {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 300px;
+  height: 500px;
+  justify-content: center;
+  justify-items: center;
+}
+.img {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  height: 220px;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 25%;
+  margin-bottom: 10%;
+}
+.text {
+  margin: 15px;
+  margin-left: 30px;
+}
+h3 {
+  margin-top: 10%;
+  font-size: 18px !important;
+  font-weight: 700;
+}
+p {
+  font-size: 14px;
+  margin-bottom: 25%;
+  margin-right: 5px;
+  font-weight: 350;
+}
+
+.contenedor-botones {
+  
+  margin-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.contenedor-botones button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 5px;
+  
+}
+
+.contenedor-botones button i {
+  font-size: 24px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.contenedor-botones button:hover i {
+  transform: scale(1.1);
+}
+
+.contenedor-botones button[disabled] {
+  display: none;
+}
+
+.botonPeq {
+  width: 10px; 
+  height: 10px; 
+  background-color: #868686; 
+  border-radius: 50px;
+  margin-right: 5px; 
+}
+.botonLarg {
+  width: 20px; 
+  height: 10px; 
+  background-color: #868686; 
+  border-radius: 50px;
+  margin-right: 5px; 
+}
+.column{
+  display: flex;
+  align-items: center;
+}
+.contenedorP {
+  display: flex; 
+  align-items: center; 
+}

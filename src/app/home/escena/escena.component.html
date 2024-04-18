@@ -1,0 +1,39 @@
+ 
+<div class="card">
+  <div class="background" [style.background]="infoHijo[currentStep].color">
+    <div class="img">
+        <img src="{{infoHijo[currentStep].img}}"></div>
+    </div>
+    <div class="text"> 
+  <div class="titulo">  
+    <h3>
+        {{infoHijo[currentStep].title}}
+    </h3>
+</div>
+<div class="parrafo">
+    <p>{{infoHijo[currentStep].descripcion}}</p>
+</div>
+<div class="contenedorP">
+  <div class="column" *ngFor="let info of infoHijo; index as i;">
+    @if(i!= currentStep){<div class="botonPeq" (click)="i > currentStep ? avanzar() : retroceder()"></div>}
+    @else{<div class="botonLarg"></div>} 
+    </div>
+    
+<div class="contenedor-botones">
+    <button (click)="retroceder()" [disabled]="disabledPrev">
+      <i class="fas fa-circle-arrow-left"></i> </button>
+    <button (click)="avanzar()" [disabled]="disabledNext">
+      <i class="fas fa-circle-arrow-right"></i> </button>
+  </div>
+</div>
+</div> 
+
+
+
+
+
+
+
+
+
+
